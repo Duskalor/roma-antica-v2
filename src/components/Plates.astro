@@ -1,0 +1,36 @@
+---
+import H1 from './H1.astro';
+import H3 from './H3.astro';
+interface Product {
+  title: string;
+  description: string;
+  aparte: string;
+  image: ImageMetadata;
+}
+const { products, title } = Astro.props;
+---
+
+<section class='max-w-screen-xl mx-auto'>
+  <H1>{title}</H1>
+  <nav class='grid grid-cols-10 w-full gap-2'>
+    {
+      products.map((product: Product) => (
+        <div class='flex border-2 border-black rounded-xl p-5 gap-5 col-span-3 '>
+          <img
+            src={product.image.src}
+            width='170'
+            class='h-[170px] rounded-sm'
+          />
+          <div class='flex justify-between flex-col'>
+            <H3>{product.title}</H3>
+            <p>{product.aparte}</p>
+            <button class=' border-2 border-black px-5 py-2 '>COMPRAR</button>
+          </div>
+        </div>
+      ))
+    }
+    <div class='flex items-center col-span-1'>
+      <a href='#' class='border-2 border-black px-5 py-2'>VER MÁS</a>
+    </div>
+  </nav>
+</section>

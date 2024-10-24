@@ -1,0 +1,31 @@
+---
+import { ofertas } from '@lib/const';
+import H1 from './H1.astro';
+import H3 from './H3.astro';
+---
+
+<section class=''>
+  <H1>Ofertas</H1>
+  <nav class='grid grid-cols-3 w-full gap-2'>
+    {
+      ofertas.map((oferta) => (
+        <div class='flex border-2 border-black rounded-xl p-5 gap-5 '>
+          <img
+            src={oferta.image.src}
+            alt=''
+            width='250'
+            height='250'
+            class='h-[250px] rounded-sm'
+          />
+          <div class='flex justify-between flex-col'>
+            <H3>{oferta.title}</H3>
+            <span class='flex flex-col gap-6'>
+              <p>{oferta.description}</p>
+              <button class=' border-2 border-black px-5 py-2 '>COMPRAR</button>
+            </span>
+          </div>
+        </div>
+      ))
+    }
+  </nav>
+</section>
