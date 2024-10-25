@@ -3,6 +3,7 @@ import slide02 from '@Images/carrousel/2.jpg';
 import slide03 from '@Images/carrousel/3.jpg';
 import slide04 from '@Images/carrousel/4.jpg';
 import slide05 from '@Images/carrousel/5.jpg';
+
 import otro from '@Images/otro.jpg';
 
 export const imagesCarrousel = [
@@ -46,3 +47,8 @@ export const ofertas = [
     image: otro,
   },
 ];
+
+export const textToWhatsapp = {
+  number: 986154999,
+  text: 'Hola, quiero pedir un pizza',
+};
