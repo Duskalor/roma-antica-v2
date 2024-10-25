@@ -49,6 +49,6 @@ export const ofertas = [
 ];
 
 export const textToWhatsapp = {
-  number: 986154999,
-  text: 'Hola, quiero pedir un pizza',
+  number: 989881253,
+  text: 'Hola, quiero hacer una reserva',
 };
