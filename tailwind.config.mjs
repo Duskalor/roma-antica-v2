@@ -8,6 +8,7 @@ export default {
         lila: '#7A1315',
         verde: '#345C2F',
         anaranjado: '#CB2128',
+        plus: '#33576a',
       },
     },
   },

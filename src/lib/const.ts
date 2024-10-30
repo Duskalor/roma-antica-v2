@@ -19,6 +19,7 @@ export const navLinks = [
   { href: '/nosotros', label: 'Nosotros' },
   { href: '/carta', label: 'Carta' },
   { href: '/contacto', label: 'Contacto' },
+  { href: '/test', label: 'test' },
 ];
 
 export const ofertas = [

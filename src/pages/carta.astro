@@ -1,5 +1,9 @@
 ---
+import { pizzas } from '@lib/pizzas';
 import Layout from '../layouts/Layout.astro';
+import ListCarta from '@components/ListCarta.astro';
 ---
 
-<Layout title='Carta'> Carta </Layout>
+<Layout title='Carta'>
+  <ListCarta title='Mi Pizza' Alldata={pizzas} />
+</Layout>

@@ -1,0 +1,25 @@
+---
+import H1 from './H1.astro';
+import { ModalItemCarta } from './react/modal/modal-react';
+
+interface Props {
+  title: string;
+  Alldata: {
+    name: string;
+    price: {
+      largue: number;
+      family: number;
+      mediana: number;
+    };
+    ingredientes: string;
+    img: ImageMetadata;
+  }[];
+}
+
+const { title, Alldata } = Astro.props;
+---
+
+<H1>{title}</H1>
+<section class='grid grid-cols-2 gap-10 max-w-screen-xl mx-auto'>
+  {Alldata.map((data) => <ModalItemCarta client:load data={data} />)}
+</section>
