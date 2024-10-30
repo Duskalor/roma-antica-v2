@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import pizzaIcon from 'public/pizza-icon.svg';
 import plus from 'public/plus.svg';
+import { toast } from 'sonner';
 
 export const ModalItemCarta = ({ data }) => {
   const [showModal, setShowModal] = useState(false);
@@ -57,18 +58,18 @@ export const ModalItemCarta = ({ data }) => {
                   <div className='flex justify-between items-center flex-col w-full'>
                     {Object.entries(data.price).map(([name, price], i) => {
                       return (
-                        <fieldset class='space-y-4 w-full'>
-                          <legend class='sr-only'>Delivery</legend>
+                        <fieldset className='space-y-4 w-full' key={i}>
+                          <legend className='sr-only'>Delivery</legend>
 
                           <div>
                             <label
                               for={`radio-${name}`}
-                              class='flex cursor-pointer justify-between gap-4 rounded-lg border border-gray-100 bg-white p-4 text-sm font-medium shadow-sm hover:border-gray-200 has-[:checked]:border-blue-500 has-[:checked]:ring-1 has-[:checked]:ring-blue-500'
+                              className='flex cursor-pointer justify-between gap-4 rounded-lg border border-gray-100 bg-white p-4 text-sm font-medium shadow-sm hover:border-gray-200 has-[:checked]:border-blue-500 has-[:checked]:ring-1 has-[:checked]:ring-blue-500'
                             >
                               <div>
-                                <p class='text-gray-700'>{name}</p>
+                                <p className='text-gray-700'>{name}</p>
 
-                                <p class='mt-1 text-gray-900'>{price}</p>
+                                <p className='mt-1 text-gray-900'>{price}</p>
                               </div>
 
                               <input
@@ -76,7 +77,7 @@ export const ModalItemCarta = ({ data }) => {
                                 name='delivery'
                                 checked={selectedOption === name}
                                 id={`radio-${name}`}
-                                class='size-5 border-gray-300 text-blue-500'
+                                className='size-5 border-gray-300 text-blue-500'
                                 onChange={() => setSelectedOption(name)}
                               />
                             </label>
@@ -85,11 +86,18 @@ export const ModalItemCarta = ({ data }) => {
                       );
                     })}
                   </div>
+                  <button
+                    onClick={() =>
+                      toast.success(`Producto comprado - ${data.name}`)
+                    }
+                    className='border mt-10 px-5 py-2 rounded bg-red-700 text-white'
+                  >
+                    Comprar
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-          <div className='opacity-25 fixed inset-0 z-40 bg-black'></div>
         </>
       ) : null}
     </>
