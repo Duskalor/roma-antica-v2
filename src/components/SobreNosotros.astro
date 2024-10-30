@@ -1,13 +1,18 @@
 ---
 import H1 from './H1.astro';
-import kim from '@Images/5.jpg';
+import kim from '@Images/carrousel/5.jpg';
 ---
 
 <section class='max-w-screen-lg mx-auto my-5'>
   <H1>SOBRE NOSOTROS</H1>
 
   <div class='flex gap-5'>
-    <img src={kim.src} alt='roma antica' width='400' class='h-[300px]' />
+    <img
+      src={kim.src}
+      alt='roma antica'
+      width='400'
+      class='h-[300px] object-cover'
+    />
     <span class='prose lg:prose-xl !text-base'>
       <h2>NOSOTROS</h2>
       <p>

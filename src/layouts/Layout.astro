@@ -1,7 +1,6 @@
 ---
 import Footer from '@components/Footer.astro';
 import Header from '@components/Header.astro';
-
 import { ViewTransitions } from 'astro:transitions';
 interface Props {
   title: string;
@@ -23,6 +22,7 @@ const { title } = Astro.props;
   </head>
   <body class='mx-auto container min-h-dvh grid grid-rows-[auto,1fr,auto]'>
     <Header />
+
     <div class='mb-10'>
       <slot />
     </div>
@@ -31,7 +31,13 @@ const { title } = Astro.props;
 </html>
 
 <style is:global>
-  :root {
+  body {
     color-scheme: dark;
+    background-image: url('../Images/fondo.png'); /* Agrega la imagen como fondo */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed;
+    z-index: 150;
   }
 </style>
