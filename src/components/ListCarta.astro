@@ -2,15 +2,26 @@
 import H1 from './H1.astro';
 import { ModalItemCarta } from './react/modal/modal-react';
 
+type pizzaPrice = {
+  personal: number;
+  mediana: number;
+  grande: number;
+};
+
+type vinoType = {
+  copa: number;
+  botella: number;
+};
+
+type lassanaType = {
+  plato: number;
+};
+
 interface Props {
   title: string;
   Alldata: {
     name: string;
-    price: {
-      largue: number;
-      family: number;
-      mediana: number;
-    };
+    price: pizzaPrice | vinoType | lassanaType;
     ingredientes: string;
     img: ImageMetadata;
   }[];

@@ -1,9 +1,0 @@
----
-import { pizzas } from '@lib/pizzas';
-import Layout from '../layouts/Layout.astro';
-import { ModalItemCarta } from '@components/react/modal/modal-react';
----
-
-<Layout title='Modal'>
-  <ModalItemCarta client:load data={pizzas[0]} />
-</Layout>

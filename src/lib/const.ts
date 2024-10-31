@@ -19,7 +19,7 @@ export const navLinks = [
   { href: '/nosotros', label: 'Nosotros' },
   { href: '/carta', label: 'Carta' },
   { href: '/contacto', label: 'Contacto' },
-  { href: '/test', label: 'test' },
+  // { href: '/test', label: 'test' },
 ];
 
 export const ofertas = [
@@ -53,3 +53,16 @@ export const textToWhatsapp = {
   number: 989881253,
   text: 'Hola, quiero hacer una reserva',
 };
+
+export const metodosDepago = [
+  {
+    name: 'Yape, interbank (plin)',
+    text: 'Quisiera pagar con Yape, interbank (plin)',
+    // img: plin,
+  },
+  {
+    name: 'Culqui express (cobra mas comisión)',
+    text: 'Quisiera pagar con Culqui express (cobra mas comisión)',
+    // img: culqui,
+  },
+];

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import pizzaIcon from 'public/pizza-icon.svg';
 import plus from 'public/plus.svg';
 import { toast } from 'sonner';
+import { metodosDepago, textToWhatsapp } from '@lib/const';
 
 export const ModalItemCarta = ({ data }) => {
   const [showModal, setShowModal] = useState(false);
@@ -34,9 +35,7 @@ export const ModalItemCarta = ({ data }) => {
       {showModal ? (
         <>
           <div
-            className={`justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none w-[${
-              data.img.width * 2 - 50
-            }px]`}
+            className='justify-center items-center  flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none '
             onClick={() => setShowModal(false)}
           >
             <div
@@ -47,54 +46,86 @@ export const ModalItemCarta = ({ data }) => {
                 <img
                   src={data.img.src}
                   alt={data.name}
+                  width='600'
+                  height='600'
                   className=' rounded-s-xl'
                 />
 
-                <div className='px-10 py-10'>
-                  <h2 className='text-xl font-semibold'>{data.name}</h2>
-                  <hr className='my-5' />
-                  <p className='text-balance'>{data.ingredientes}</p>
-                  <hr className='my-5' />
-                  <div className='flex justify-between items-center flex-col w-full'>
-                    {Object.entries(data.price).map(([name, price], i) => {
-                      return (
-                        <fieldset className='space-y-4 w-full' key={i}>
-                          <legend className='sr-only'>Delivery</legend>
+                <section className={'px-10 py-10 w-[600px] '}>
+                  <h2 className='text-xl font-semibold py-2 border-b-[1px] border-gray-500 '>
+                    {data.name}
+                  </h2>
+                  <div className=' h-[400px] overflow-y-auto'>
+                    {/* <hr className='my-5' /> */}
+                    <p className='text-balance pt-4'>{data.ingredientes}</p>
+                    <hr className='my-5' />
+                    {/* precios de la carta */}
+                    <div className='flex justify-between items-center flex-col w-full pr-4'>
+                      {Object.entries(data.price).map(([name, price], i) => {
+                        return (
+                          <fieldset className='space-y-4 w-full' key={i}>
+                            <legend className='sr-only'>Delivery</legend>
 
-                          <div>
-                            <label
-                              for={`radio-${name}`}
-                              className='flex cursor-pointer justify-between gap-4 rounded-lg border border-gray-100 bg-white p-4 text-sm font-medium shadow-sm hover:border-gray-200 has-[:checked]:border-blue-500 has-[:checked]:ring-1 has-[:checked]:ring-blue-500'
-                            >
-                              <div>
-                                <p className='text-gray-700'>{name}</p>
+                            <div>
+                              <label
+                                for={`radio-${name}`}
+                                className='flex cursor-pointer justify-between gap-4 rounded-lg border border-gray-100 bg-white py-1 px-4  text-sm font-medium shadow-sm hover:border-gray-200 has-[:checked]:border-blue-500 has-[:checked]:ring-1 has-[:checked]:ring-blue-500 items-center '
+                              >
+                                <div>
+                                  <p className='text-gray-700 uppercase font-semibold'>
+                                    {name}
+                                  </p>
 
-                                <p className='mt-1 text-gray-900'>{price}</p>
-                              </div>
+                                  <p className='mt-1 text-gray-900 font-bold'>
+                                    S/.{price}
+                                  </p>
+                                </div>
 
-                              <input
-                                type='radio'
-                                name='delivery'
-                                checked={selectedOption === name}
-                                id={`radio-${name}`}
-                                className='size-5 border-gray-300 text-blue-500'
-                                onChange={() => setSelectedOption(name)}
-                              />
-                            </label>
-                          </div>
-                        </fieldset>
-                      );
-                    })}
+                                <input
+                                  type='radio'
+                                  name='delivery'
+                                  checked={selectedOption === name}
+                                  id={`radio-${name}`}
+                                  className='size-5 border-gray-300 text-blue-500'
+                                  onChange={() => setSelectedOption(name)}
+                                />
+                              </label>
+                            </div>
+                          </fieldset>
+                        );
+                      })}
+                    </div>
+                    <hr className='my-5' />
+                    {/* metodos de pago */}
+                    <div>
+                      <h2 className='text-lg font-semibold p-4'>
+                        Método de pago
+                      </h2>
+
+                      <div className='flex flex-col gap-4 p-4 text-center items-start'>
+                        {metodosDepago.map((mtp) => (
+                          <a
+                            target='_blank'
+                            href={`https://api.whatsapp.com/send?phone=+51${textToWhatsapp.number}&text=${mtp.text}`}
+                            class='transition-all duration-500 border-2 border-black px-4 mx-4 py-2 rounded-md hover:bg-gray-400'
+                          >
+                            {mtp.name}
+                          </a>
+                        ))}
+                      </div>
+                    </div>
                   </div>
-                  <button
-                    onClick={() =>
-                      toast.success(`Producto comprado - ${data.name}`)
-                    }
-                    className='border mt-10 px-5 py-2 rounded bg-red-700 text-white'
-                  >
-                    Comprar
-                  </button>
-                </div>
+                  <div className='flex justify-end'>
+                    <button
+                      onClick={() =>
+                        toast.success(`Producto comprado - ${data.name}`)
+                      }
+                      className='wf-full border mt-10 px-5 py-2 rounded bg-red-700 text-white'
+                    >
+                      Comprar
+                    </button>
+                  </div>
+                </section>
               </div>
             </div>
           </div>
