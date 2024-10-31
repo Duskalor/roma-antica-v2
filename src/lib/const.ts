@@ -1,17 +1,15 @@
 import slide01 from '@Images/carrousel/1.jpg';
-import slide02 from '@Images/carrousel/2.jpg';
-import slide03 from '@Images/carrousel/3.jpg';
-import slide04 from '@Images/carrousel/4.jpg';
-import slide05 from '@Images/carrousel/5.jpg';
+import slide02 from '@Images/carrousel/3.jpg';
+import slide03 from '@Images/carrousel/4.jpg';
+import slide04 from '@Images/carrousel/5.jpg';
 
 import otro from '@Images/otro.jpg';
 
 export const imagesCarrousel = [
   { image: slide01, name: 'image1' },
-  { image: slide02, name: 'image2' },
-  { image: slide03, name: 'image3' },
-  { image: slide04, name: 'image4' },
-  { image: slide05, name: 'image5' },
+  { image: slide02, name: 'image3' },
+  { image: slide03, name: 'image4' },
+  { image: slide04, name: 'image5' },
 ];
 
 export const navLinks = [
