@@ -1,10 +1,11 @@
-import kim from '@Images/kim.jpg';
+import malbec from '@Images/VINO/MALBEC.jpg';
+
 export const vinos = [
   {
-    name: 'Roma Ántica',
+    name: 'Malbec',
     ingredientes:
       'Salsa de tomate, queso mozzarella, piña, salame, pepperoni, tocino y orégano restregado',
-    img: kim,
+    img: malbec,
     price: {
       copa: 20,
       botella: 50,
