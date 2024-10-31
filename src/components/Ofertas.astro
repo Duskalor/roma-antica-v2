@@ -5,7 +5,7 @@ import H3 from './H3.astro';
 ---
 
 <section>
-  <H1>Ofertas</H1>
+  <H1>OFERTAS</H1>
   <nav class='grid grid-cols-3 w-full gap-2'>
     {
       ofertas.map((oferta) => (
@@ -21,7 +21,7 @@ import H3 from './H3.astro';
             <H3>{oferta.title}</H3>
             <span class='flex flex-col gap-6'>
               <p>{oferta.description}</p>
-              <button class=' border-2 border-black px-5 py-2 '>COMPRAR</button>
+              <button class=' border-2 px-5 py-2 bg-verde rounded-xl text-white'>COMPRAR</button> 
             </span>
           </div>
         </div>

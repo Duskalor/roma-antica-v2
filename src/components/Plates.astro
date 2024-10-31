@@ -16,7 +16,7 @@ console.log(products);
   <nav class='grid grid-cols-10 w-full gap-2'>
     {
       products.map((product: Product) => (
-        <div class='flex border-2 border-black rounded-xl p-5 gap-5 col-span-3 bg-white'>
+        <div class='flex border-2 rounded-xl p-5 gap-5 col-span-3 bg-white'>
           <img
             src={product.image.src}
             width='170'
@@ -25,13 +25,13 @@ console.log(products);
           <div class='flex justify-between flex-col'>
             <H3>{product.title}</H3>
             <p>{product.aparte}</p>
-            <button class=' border-2 border-black px-5 py-2 '>COMPRAR</button>
+            <button class=' border-2 px-5 py-2 rounded-xl bg-verde text-white'>COMPRAR</button>
           </div>
         </div>
       ))
     }
     <div class='flex items-center col-span-1'>
-      <a href='/carta' class='border-2 border-black px-5 py-2 bg-white rounded'
+      <a href='/carta' class=' px-5 py-2 bg-lila text-white rounded-xl'
         >VER MÁS</a
       >
     </div>
