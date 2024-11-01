@@ -8,7 +8,7 @@ interface Product {
   image: ImageMetadata;
 }
 const { products, title } = Astro.props;
-console.log(products);
+// console.log(products);
 ---
 
 <section class='max-w-screen-xl mx-auto'>
@@ -25,13 +25,15 @@ console.log(products);
           <div class='flex justify-between flex-col'>
             <H3>{product.title}</H3>
             <p>{product.aparte}</p>
-            <button class=' border-2 px-5 py-2 rounded-xl bg-verde text-white'>COMPRAR</button>
+            <button class=' border-2 px-5 py-2 rounded-xl bg-verde text-white'>
+              COMPRAR
+            </button>
           </div>
         </div>
       ))
     }
     <div class='flex items-center col-span-1'>
-      <a href='/carta' class=' px-5 py-2 bg-lila text-white rounded-xl'
+      <a href='/carta' class='px-5 py-2 bg-lila text-white rounded-xl'
         >VER MÁS</a
       >
     </div>
