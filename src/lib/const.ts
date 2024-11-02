@@ -1,7 +1,6 @@
 import slide01 from '@Images/carrousel/1.jpg';
 import slide02 from '@Images/carrousel/3.jpg';
 import slide03 from '@Images/carrousel/4.jpg';
-import slide04 from '@Images/carrousel/5.jpg';
 
 import otro from '@Images/otro.jpg';
 
@@ -21,7 +20,6 @@ export const imagesCarrousel = [
   { image: slide01, name: 'image1' },
   { image: slide02, name: 'image3' },
   { image: slide03, name: 'image4' },
-  // { image: slide04, name: 'image5' },
 ];
 
 export const navLinks = [
@@ -34,7 +32,7 @@ export const navLinks = [
 
 export const ofertas = [
   {
-    title: 'PIZZA XL',
+    title: 'COMBO 1',
     description:
       'La pizza es uno de los platos más icónicos y apreciados a nivel mundial.La pizza es uno de los platos más icónicos y apreciados a nivel mundial.',
     aparte:
@@ -42,7 +40,7 @@ export const ofertas = [
     image: otro,
   },
   {
-    title: 'PIZZA XL',
+    title: 'COMBO 2',
     description:
       'La pizza es uno de los platos más icónicos y apreciados a nivel mundial.La pizza es uno de los platos más icónicos y apreciados a nivel mundial.',
     aparte:
@@ -50,7 +48,7 @@ export const ofertas = [
     image: otro,
   },
   {
-    title: 'PIZZA XL',
+    title: 'COMBO 3',
     description:
       'La pizza es uno de los platos más icónicos y apreciados a nivel mundial.La pizza es uno de los platos más icónicos y apreciados a nivel mundial.',
     aparte:
