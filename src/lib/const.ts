@@ -7,10 +7,10 @@ import otro from '@Images/otro.jpg';
 import VISION from '@Images/MI VI/VISION.png';
 import MISION from '@Images/MI VI/MISION.png';
 
-import CALIDAD from '@Images/valores/CALIDAD.png';
-import AMABILIDAD from '@Images/valores/AMABILIDAD.png';
-import LIMPIEZA from '@Images/valores/LIMPIEZA.png';
-import PASION from '@Images/valores/PASION.png';
+import CALIDAD from '../Images/valores/CALIDAD.png';
+import AMABILIDAD from '../Images/valores/AMABILIDAD.png';
+import LIMPIEZA from '../Images/valores/LIMPIEZA.png';
+import PASION from '../Images/valores/PASION.png';
 
 import facebook from '@Images/REDES/facebook.svg';
 import instagram from '@Images/REDES/instagram.svg';
