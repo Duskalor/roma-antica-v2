@@ -12,9 +12,9 @@ import AMABILIDAD from '@Images/valores/AMABILIDAD.png';
 import LIMPIEZA from '@Images/valores/LIMPIEZA.png';
 import PASION from '@Images/valores/PASION.png';
 
-import facebook from 'public/facebook.svg';
-import instagram from 'public/instagram.svg';
-import tiktok from 'public/tiktok.svg';
+import facebook from '@Images/REDES/facebook.svg';
+import instagram from '@Images/REDES/instagram.svg';
+import tiktok from '@Images/REDES/tiktok.svg';
 
 export const imagesCarrousel = [
   { image: slide01, name: 'image1' },
