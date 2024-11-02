@@ -2,13 +2,12 @@
 import H1 from './H1.astro';
 import H3 from './H3.astro';
 interface Product {
-  title: string;
+  name: string;
   description: string;
   aparte: string;
-  image: ImageMetadata;
+  img: ImageMetadata;
 }
 const { products, title } = Astro.props;
-// console.log(products);
 ---
 
 <section class='max-w-screen-xl mx-auto'>
@@ -17,14 +16,12 @@ const { products, title } = Astro.props;
     {
       products.map((product: Product) => (
         <div class='flex border-2 rounded-xl p-5 gap-5 col-span-3 bg-white'>
-          <img
-            src={product.image.src}
-            width='170'
-            class='h-[170px] rounded-md'
-          />
+          <img src={product.img.src} width='170' class='h-[170px] rounded-md' />
           <div class='flex justify-between flex-col'>
-            <H3>{product.title}</H3>
-            <p>{product.aparte}</p>
+            <h2 class='text-md text-center md:text-lg lg:text-xl font-semibold text-lila'>
+              {product.name}
+            </h2>
+            <p>{product.description}</p>
             <button class=' border-2 px-5 py-2 rounded-xl bg-verde text-white'>
               COMPRAR
             </button>

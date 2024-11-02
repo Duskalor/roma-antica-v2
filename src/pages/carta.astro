@@ -4,11 +4,17 @@ import Layout from '../layouts/Layout.astro';
 import ListCarta from '@components/ListCarta.astro';
 import { vinos } from '@lib/vinos';
 import { pastas } from '@lib/pastas';
+import pizzaIcon from 'public/pizza-icon.svg';
+import pastaIcon from 'public/pasta.svg';
+import vinosIcon from 'public/vinos.svg';
+
+const PzI = { icon: pizzaIcon, msg: 'pizza icon' };
+const PaI = { icon: pastaIcon, msg: 'pasta icon' };
+const VI = { icon: vinosIcon, msg: 'vinos icon' };
 ---
 
 <Layout title='Carta'>
-  <ListCarta title='Mi Pizza' Alldata={pizzas} />
-  <ListCarta title='Pastas' Alldata={pastas} />
-  <ListCarta title='Vinos' Alldata={vinos} />
-  
+  <ListCarta title='Mi Pizza' Alldata={pizzas} icon={PzI} />
+  <ListCarta title='Pastas' Alldata={pastas} icon={PaI} />
+  <ListCarta title='Vinos' Alldata={vinos} icon={VI} />
 </Layout>

@@ -1,7 +1,6 @@
 ---
 import H1 from './H1.astro';
 import { ModalItemCarta } from './react/modal/modal-react';
-
 type pizzaPrice = {
   personal: number;
   mediana: number;
@@ -25,12 +24,23 @@ interface Props {
     ingredientes: string;
     img: ImageMetadata;
   }[];
+  icon: {
+    icon: ImageMetadata;
+    msg: string;
+  };
 }
 
-const { title, Alldata } = Astro.props;
+const { title, Alldata, icon } = Astro.props;
 ---
 
 <H1>{title}</H1>
-<section class='grid grid-cols-2 gap-10 max-w-screen-xl mx-auto'>
-  {Alldata.map((data) => <ModalItemCarta client:load data={data} />)}
+<section
+  id={title.replace(/ /g, '-').toLowerCase()}
+  class='grid grid-cols-2 gap-10 max-w-screen-xl mx-auto'
+>
+  {
+    Alldata.map((data) => (
+      <ModalItemCarta client:load data={data} iconImg={icon} />
+    ))
+  }
 </section>

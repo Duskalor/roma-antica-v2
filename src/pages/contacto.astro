@@ -1,5 +1,16 @@
 ---
+import H3 from '@components/H3.astro';
 import Layout from '../layouts/Layout.astro';
+import mapa from '@Images/mapa.jpg';
+import H1 from '@components/H1.astro';
 ---
 
-<Layout title='Contacto'> Contacto </Layout>
+<Layout title='Contacto'>
+  <H1>UBICACIÓN</H1>
+  <section class='flex flex-col justify-center items-center rounded-lg p-10'>
+    <img src={mapa.src} alt='' />
+    <H3 className='py-10'>
+      A 3 APV. VILLA SAN JOSE 1ER PISO EN PIZZERIA SAN SEBASTIÁN - CUSCO -CUSCO
+    </H3>
+  </section>
+</Layout>

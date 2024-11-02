@@ -1,0 +1,8 @@
+---
+import Card from './Card.astro';
+import { visionMision } from '@lib/const';
+---
+
+<section class='max-w-screen-md mx-auto space-y-5 py-5'>
+  {visionMision.map((data) => <Card data={data} />)}
+</section>

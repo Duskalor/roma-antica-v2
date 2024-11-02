@@ -1,9 +1,11 @@
 ---
 import { ofertas } from '@lib/const';
 import Plates from './Plates.astro';
-import { ofertaPizza } from '@lib/pizzas';
+import { ofertaPizza, pizzas } from '@lib/pizzas';
+import { pastas } from '@lib/pastas';
+import { vinos } from '@lib/vinos';
 ---
 
-<Plates products={ofertaPizza} title='PIZZAS' />
-<Plates products={ofertas} title='PASTAS' />
-<Plates products={ofertas} title='VINOS' />
+<Plates products={pizzas.slice(0, 3)} title='PIZZAS' />
+<Plates products={pastas.slice(0, 3)} title='PASTAS' />
+<Plates products={vinos.slice(0, 3)} title='VINOS' />

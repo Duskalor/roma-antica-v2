@@ -1,5 +1,12 @@
+---
+const { className } = Astro.props;
+---
+
 <h3
-  class='text-xl text-center md:text-2xl lg:text-3xl font-semibold text-lila'
+  class:list={[
+    className,
+    'text-xl text-center md:text-2xl lg:text-3xl font-semibold text-lila',
+  ]}
 >
   <slot />
 </h3>

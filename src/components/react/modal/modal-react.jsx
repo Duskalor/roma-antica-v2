@@ -1,15 +1,14 @@
 import { useState } from 'react';
-import pizzaIcon from 'public/pizza-icon.svg';
+
 import plus from 'public/plus.svg';
 import { toast } from 'sonner';
 import { metodosDepago, textToWhatsapp } from '@lib/const';
 
-export const ModalItemCarta = ({ data }) => {
+export const ModalItemCarta = ({ data, iconImg }) => {
   const [showModal, setShowModal] = useState(false);
   const [selectedOption, setSelectedOption] = useState(
     Object.keys(data.price)[0]
   );
-
   return (
     <>
       <button onClick={() => setShowModal(true)}>
@@ -20,11 +19,11 @@ export const ModalItemCarta = ({ data }) => {
             width='120'
             className='rounded-lg'
           />
-          <div className='flex flex-col justify-between'>
+          <div className='flex flex-col justify-between flex-1 w-full'>
             <h2 className='text-xl text-black'>{data.name}</h2>
             <p className='text-gray-500 '>{data.ingredientes}</p>
             <div className='flex justify-between items-center '>
-              <img src={pizzaIcon.src} alt='pizzaIcon' />
+              <img src={iconImg.icon.src} alt={iconImg.msg} />
               <span className='justify-center flex bg-plus rounded-lg p-2 text-white w-12 h-8 '>
                 <img src={plus.src} alt='agregar' />
               </span>

@@ -3,22 +3,26 @@ import H1 from './H1.astro';
 import kim from '@Images/carrousel/5.jpg';
 ---
 
-<section class='max-w-screen-lg mx-auto my-5'>
+<section class='max-w-screen-lg mx-auto my-5 px-4'>
   <H1>SOBRE NOSOTROS</H1>
 
-  <div class='flex gap-5 bg-white rounded-xl'>
+  <div class='flex flex-col md:flex-row gap-5 border-2 rounded-xl'>
     <img
       src={kim.src}
       alt='roma antica'
       width='400'
-      class='h-[300px] object-cover'
+      class='h-[300px] object-cover rounded-t-xl md:rounded-s-xl md:rounded-t-none'
     />
-    <span class='prose flex items-center lg:prose-xl font-semibold text-center !text-base'>
-      
+    <span
+      class='prose flex items-center font-semibold text-center text-lg px-5'
+    >
       <p>
-        Roma Ántica nació en 2015 en cusco, con la ayuda del esposo de la dueña de la pizzería, su esposo estudio gastronomía y trabajo en una pizzería italiana en Lima, llamada originalmente “Roma Mia”, tanto la dueña como el esposo decidieron traer su pasión por la cocina italiana a nuestra ciudad del Cusco, pero optaron por el nombre de “Roma Ántica”.
+        Roma Ántica nació en 2015 en cusco, con la ayuda del esposo de la dueña
+        de la pizzería, su esposo estudio gastronomía y trabajo en una pizzería
+        italiana en Lima, llamada originalmente “Roma Mia”, tanto la dueña como
+        el esposo decidieron traer su pasión por la cocina italiana a nuestra
+        ciudad del Cusco, pero optaron por el nombre de “Roma Ántica”.
       </p>
-      
     </span>
   </div>
 </section>

@@ -29,6 +29,8 @@ export const pizzas = [
       mediana: 20,
       grande: 30,
     },
+    description:
+      'Una deliciosa pizza con una combinación única de ingredientes que te transportarán a la antigua Roma.',
   },
   {
     name: 'Alemana',
@@ -40,6 +42,8 @@ export const pizzas = [
       mediana: 20,
       grande: 30,
     },
+    description:
+      'Una pizza robusta y sabrosa con una mezcla de carnes alemanas tradicionales.',
   },
   {
     name: 'Dolcetto',
@@ -51,6 +55,8 @@ export const pizzas = [
       mediana: 20,
       grande: 30,
     },
+    description:
+      'Una pizza dulce y exótica perfecta para los amantes de los sabores frutales.',
   },
   {
     name: 'Americana',
@@ -62,6 +68,8 @@ export const pizzas = [
       mediana: 20,
       grande: 30,
     },
+    description:
+      'Una pizza clásica americana con una mezcla de carnes y queso mozzarella.',
   },
   {
     name: 'Hawayana',
@@ -73,6 +81,8 @@ export const pizzas = [
       mediana: 20,
       grande: 30,
     },
+    description:
+      'Una pizza tropical con piña y jamón que te hará sentir en una isla paradisíaca.',
   },
   {
     name: 'Caprichoza',
@@ -84,6 +94,8 @@ export const pizzas = [
       mediana: 20,
       grande: 30,
     },
+    description:
+      'Una pizza caprichosa con una variedad de ingredientes frescos y sabrosos.',
   },
   {
     name: 'La Última',
@@ -95,6 +107,8 @@ export const pizzas = [
       mediana: 20,
       grande: 30,
     },
+    description:
+      'Una pizza única con una mezcla de ingredientes dulces y salados.',
   },
   {
     name: "Andrea's Pizza",
@@ -106,6 +120,8 @@ export const pizzas = [
       mediana: 20,
       grande: 30,
     },
+    description:
+      'Una pizza especial con una combinación de ingredientes seleccionados por Andrea.',
   },
   {
     name: "Luana's Pizza",
@@ -117,6 +133,8 @@ export const pizzas = [
       mediana: 20,
       grande: 30,
     },
+    description:
+      'Una pizza deliciosa con una mezcla de ingredientes seleccionados por Luana.',
   },
   {
     name: 'Chef',
@@ -128,6 +146,8 @@ export const pizzas = [
       mediana: 20,
       grande: 30,
     },
+    description:
+      'Una pizza gourmet con una selección de ingredientes de alta calidad.',
   },
   {
     name: 'Diavola',
@@ -139,6 +159,8 @@ export const pizzas = [
       mediana: 20,
       grande: 30,
     },
+    description:
+      'Una pizza picante con una mezcla de ingredientes que te harán arder de placer.',
   },
   {
     name: 'Premium',
@@ -150,6 +172,8 @@ export const pizzas = [
       mediana: 20,
       grande: 30,
     },
+    description:
+      'Una pizza premium con una combinación de ingredientes de alta calidad.',
   },
   {
     name: 'Vegetariana',
@@ -161,6 +185,8 @@ export const pizzas = [
       mediana: 20,
       grande: 30,
     },
+    description:
+      'Una pizza saludable y deliciosa con una variedad de ingredientes frescos.',
   },
   {
     name: 'Di Carne',
@@ -172,6 +198,7 @@ export const pizzas = [
       mediana: 20,
       grande: 30,
     },
+    description: 'Una pizza cargada de carne para los amantes de la proteína.',
   },
   {
     name: 'Carbonara',
@@ -183,6 +210,8 @@ export const pizzas = [
       mediana: 20,
       grande: 30,
     },
+    description:
+      'Una pizza cremosa con una mezcla de ingredientes inspirados en la pasta carbonara.',
   },
 ];
 
@@ -193,7 +222,7 @@ export const ofertaPizza = [
       'La pizza es uno de los platos más icónicos y apreciados a nivel mundial.La pizza es uno de los platos más icónicos y apreciados a nivel mundial.',
     aparte:
       'La pizza es uno de los platos más icónicos y apreciados a nivel mundial.',
-    image: pizzaVerde,
+    img: pizzaVerde,
   },
   {
     title: 'pizza pequeña',
@@ -201,7 +230,7 @@ export const ofertaPizza = [
       'La pizza es uno de los platos más icónicos y apreciados a nivel mundial.La pizza es uno de los platos más icónicos y apreciados a nivel mundial.',
     aparte:
       'La pizza es uno de los platos más icónicos y apreciados a nivel mundial.',
-    image: pizzaVerde,
+    img: pizzaVerde,
   },
   {
     title: 'pizza grande',
@@ -209,6 +238,6 @@ export const ofertaPizza = [
       'La pizza es uno de los platos más icónicos y apreciados a nivel mundial.La pizza es uno de los platos más icónicos y apreciados a nivel mundial.',
     aparte:
       'La pizza es uno de los platos más icónicos y apreciados a nivel mundial.',
-    image: pizzaVerde,
+    img: pizzaVerde,
   },
 ];
