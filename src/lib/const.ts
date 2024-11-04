@@ -116,18 +116,18 @@ export const redes = [
     name: 'facebook',
     url: 'https://www.facebook.com/Trattoria-Don-Vito-107418418351644',
     icon: facebook,
-    username: 'Roma Ántica Trattoria Cusco',
+    username: 'Pizzeria Roma Antica Trattoria',
   },
   {
     name: 'instagram',
     url: 'https://www.instagram.com/trattoria_donvito/',
     icon: instagram,
-    username: 'Roma Ántica Trattoria Cusco',
+    username: 'Pizzeria Roma Antica Trattoria',
   },
   {
     name: 'tiktok',
     url: 'https://www.tiktok.com/@trattoria_donvito',
     icon: tiktok,
-    username: 'Roma Ántica Trattoria Cusco',
+    username: 'Pizzeria Roma Antica Trattoria',
   },
 ];
