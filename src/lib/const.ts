@@ -2,7 +2,9 @@ import slide01 from '@Images/carrousel/1.jpg';
 import slide02 from '@Images/carrousel/3.jpg';
 import slide03 from '@Images/carrousel/4.jpg';
 
-import otro from '@Images/otro.jpg';
+import combo1 from '@Images/combos/combo1.jpeg';
+import combo2 from '@Images/combos/combo2.jpg';
+import combo3 from '@Images/combos/combo3.jpg';
 
 import VISION from '@Images/MI VI/VISION.png';
 import MISION from '@Images/MI VI/MISION.png';
@@ -37,7 +39,7 @@ export const ofertas = [
       'La pizza es uno de los platos más icónicos y apreciados a nivel mundial.La pizza es uno de los platos más icónicos y apreciados a nivel mundial.',
     aparte:
       'La pizza es uno de los platos más icónicos y apreciados a nivel mundial.',
-    image: otro,
+    image: combo1,
   },
   {
     title: 'COMBO 2',
@@ -45,7 +47,7 @@ export const ofertas = [
       'La pizza es uno de los platos más icónicos y apreciados a nivel mundial.La pizza es uno de los platos más icónicos y apreciados a nivel mundial.',
     aparte:
       'La pizza es uno de los platos más icónicos y apreciados a nivel mundial.',
-    image: otro,
+    image: combo2,
   },
   {
     title: 'COMBO 3',
@@ -53,7 +55,7 @@ export const ofertas = [
       'La pizza es uno de los platos más icónicos y apreciados a nivel mundial.La pizza es uno de los platos más icónicos y apreciados a nivel mundial.',
     aparte:
       'La pizza es uno de los platos más icónicos y apreciados a nivel mundial.',
-    image: otro,
+    image: combo3,
   },
 ];
 
