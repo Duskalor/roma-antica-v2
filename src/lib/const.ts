@@ -36,7 +36,7 @@ export const ofertas = [
   {
     title: 'COMBO 1',
     description:
-      'SERENATA ITALIANA - Pizza Hawayana grande acompañado de su vino Syrah - ¡Reserva tu mesa hoy y disfruta de una experiencia única!',
+      'SERENATA ITALIANA - Pizza Americana grande acompañado de su vino Gabernet - ¡Reserva tu mesa hoy y disfruta de una experiencia única!',
     aparte:
       'SERENATA ITALIANA - Pizza Hawayana grande acompañado de su vino Syrah',
     image: combo1,
@@ -44,7 +44,7 @@ export const ofertas = [
   {
     title: 'COMBO 2',
     description:
-      'La pizza es uno de los platos más icónicos y apreciados a nivel mundial.La pizza es uno de los platos más icónicos y apreciados a nivel mundial.',
+      'SABOR A LA ROMANA - Pizza Americana grande acompañado de su Lasagna - ¡Reserva tu mesa hoy y disfruta de una experiencia única!',
     aparte:
       'La pizza es uno de los platos más icónicos y apreciados a nivel mundial.',
     image: combo2,
@@ -52,7 +52,7 @@ export const ofertas = [
   {
     title: 'COMBO 3',
     description:
-      'La pizza es uno de los platos más icónicos y apreciados a nivel mundial.La pizza es uno de los platos más icónicos y apreciados a nivel mundial.',
+      'ENCANTO ITALIANO - Pizza Americana grande acompañado de su vino Gabernet y su Lasagna - ¡Reserva tu mesa hoy y disfruta de una experiencia única!',
     aparte:
       'La pizza es uno de los platos más icónicos y apreciados a nivel mundial.',
     image: combo3,
