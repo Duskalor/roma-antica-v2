@@ -3,8 +3,8 @@ import slide02 from '@Images/carrousel/3.jpg';
 import slide03 from '@Images/carrousel/4.jpg';
 
 import combo1 from '@Images/combos/combo1.jpeg';
-import combo2 from '@Images/combos/combo2.jpg';
-import combo3 from '@Images/combos/combo3.jpg';
+import combo2 from '@Images/combos/combo2.jpeg';
+import combo3 from '@Images/combos/combo3.jpeg';
 
 import VISION from '@Images/MI VI/VISION.png';
 import MISION from '@Images/MI VI/MISION.png';
@@ -36,9 +36,9 @@ export const ofertas = [
   {
     title: 'COMBO 1',
     description:
-      'La pizza es uno de los platos más icónicos y apreciados a nivel mundial.La pizza es uno de los platos más icónicos y apreciados a nivel mundial.',
+      'SERENATA ITALIANA - Pizza Hawayana grande acompañado de su vino Syrah - ¡Reserva tu mesa hoy y disfruta de una experiencia única!',
     aparte:
-      'La pizza es uno de los platos más icónicos y apreciados a nivel mundial.',
+      'SERENATA ITALIANA - Pizza Hawayana grande acompañado de su vino Syrah',
     image: combo1,
   },
   {
